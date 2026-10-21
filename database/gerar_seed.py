@@ -125,4 +125,3 @@ def gerar_seed_sql():
     print("Concluído! Ficheiro 'seed.sql' gerado com sucesso para PostgreSQL.")
 
 if __name__ == "_main_":
-    gerar_seed_sql()
