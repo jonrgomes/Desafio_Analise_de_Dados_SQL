@@ -1,0 +1,46 @@
+[
+  {
+    "id_venda": 1,
+    "data_venda": "2026-02-02T12:27:02Z",
+    "status": "CONCLUIDO",
+    "valor_total": 3227.76,
+    "cliente": {
+      "id_cliente": 2594,
+      "nome": "Vitória da Cunha",
+      "email": "fmarques@example.org",
+      "telefone": "24 98454-3732"
+    },
+    "endereco_entrega": {
+      "rua": "Pátio Costa",
+      "cep": "77712811",
+      "cidade": {
+        "id_cidade": 3515186,
+        "codigo_ibge": 3515186,
+        "nome": "Espírito Santo do Pinhal",
+        "id_estado": 35,
+        "estado": {
+          "id_estado": 35,
+          "sigla": "SP",
+          "nome": "São Paulo"
+        }
+      }
+    },
+    "pagamento": {
+      "metodo": "CARTAO_CREDITO",
+      "status": "APROVADO",
+      "parcelas": 1
+    },
+    "itens": [
+      {
+        "id_produto": 1350,
+        "nome": "Mouse Wireless Illum",
+        "quantidade": 3,
+        "preco_unitario": 1075.92,
+        "categoria": {
+          "id_categoria": 7,
+          "nome": "Armazenamento"
+        }
+      }
+    ]
+  }
+]

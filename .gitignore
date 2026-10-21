@@ -1,0 +1,29 @@
+# Ambiente Virtual Python
+venv/
+.venv/
+env/
+ENV/
+
+# Arquivos de Variáveis de Ambiente (Credenciais Sensíveis)
+.env
+!.env.example
+
+# Bytecode e Caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Caches de IDEs e Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs e Sistema Operacional
+*.log
+.DS_Store
+Thumbs.db

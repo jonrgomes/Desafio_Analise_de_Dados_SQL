@@ -1,0 +1,8 @@
+# Geração de dados fictícios realistas
+faker>=20.0.0
+
+# Leitura de variáveis do arquivo .env
+python-dotenv>=1.0.0
+
+# Driver oficial de conexão com o PostgreSQL
+psycopg2-binary>=2.9.9

@@ -1,0 +1,28 @@
+-- ESTADOS (IBGE)
+INSERT INTO estados (id_estado, sigla, nome) VALUES (11, 'RO', 'Rondônia') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (12, 'AC', 'Acre') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (13, 'AM', 'Amazonas') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (14, 'RR', 'Roraima') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (15, 'PA', 'Pará') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (16, 'AP', 'Amapá') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (17, 'TO', 'Tocantins') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (21, 'MA', 'Maranhão') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (22, 'PI', 'Piauí') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (23, 'CE', 'Ceará') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (24, 'RN', 'Rio Grande do Norte') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (25, 'PB', 'Paraíba') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (26, 'PE', 'Pernambuco') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (27, 'AL', 'Alagoas') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (28, 'SE', 'Sergipe') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (29, 'BA', 'Bahia') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (31, 'MG', 'Minas Gerais') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (32, 'ES', 'Espírito Santo') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (33, 'RJ', 'Rio de Janeiro') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (35, 'SP', 'São Paulo') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (41, 'PR', 'Paraná') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (42, 'SC', 'Santa Catarina') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (43, 'RS', 'Rio Grande do Sul') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (50, 'MS', 'Mato Grosso do Sul') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (51, 'MT', 'Mato Grosso') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (52, 'GO', 'Goiás') ON CONFLICT (id_estado) DO NOTHING;
+INSERT INTO estados (id_estado, sigla, nome) VALUES (53, 'DF', 'Distrito Federal') ON CONFLICT (id_estado) DO NOTHING;
