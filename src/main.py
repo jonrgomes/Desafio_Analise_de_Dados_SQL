@@ -15,7 +15,7 @@ import sys
 if sys.platform.startswith('win'):
   try:
     if hasattr(sys.stdout, 'reconfigure'):
-      sys.stdout.reconfigure(encoding='utf-8')
+      sys.stdout.reconfigure(encoding='utf-8') # type: ignore
   except Exception:
     pass
 
@@ -48,9 +48,10 @@ def main():
     print('  3. O script de schema e os seeds foram executados com sucesso.')
     return
 
-  print(
-      f'[2/2] {len(vendas):,} registros encontrados com sucesso!'
-  )
+  print(f'[2/2] {len(vendas):,} registros encontrados com sucesso!')
 
+  print(vendas[0])
+  
+  
 if __name__ == '__main__':
   main()
