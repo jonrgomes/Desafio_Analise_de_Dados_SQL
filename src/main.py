@@ -10,6 +10,7 @@ e exploratória dos dados com foco em regras de negócio.
 from collections import Counter, defaultdict
 import os
 import sys
+from turtle import update
 
 # Garante suporte adequado a UTF-8 em terminais Windows
 if sys.platform.startswith('win'):
@@ -50,24 +51,48 @@ def main():
 
   print(f'[2/2] {len(vendas):,} registros encontrados com sucesso!')
   
-  print("RELATÓRIO DE VENDAS - E-COMERCE 2026- BRASIL")
-  print(" ")
-  print("1 - Visão geral das finanças:")
-  print(" ")
+  print("\nRELATÓRIO DE VENDAS - E-COMERCE 2026 - BRASIL\n")
+  print("\n1 - Visão geral das finanças:\n")
   vendas_concluidas = 0
   faturamento = 0
+  qtd_vendas_conluidas = 0
   for venda in vendas:
     faturamento += venda["valor_total"]
     if venda["status"] == "CONCLUIDO":
         vendas_concluidas += venda["valor_total"]
-    
+        qtd_vendas_conluidas += 1
+        
+  ticket_medio = vendas_concluidas / qtd_vendas_conluidas
 
   print(f'Total de vendas: R$ {faturamento:,.2f}')
   print(f'Total de vendas concluídas: R$ {vendas_concluidas:,.2f}')
+  print(f'Ticket médio por VENDA CONCLUÍDA: R$ {ticket_medio:,.2f}')
+  print("\n2 - Distribição por Status de Pedido:\n")
+  concluidos = 0
+  cancelado = 0
+  pendente = 0
+  
+  for venda in vendas:
+    if venda["status"] == "CONCLUIDO":
+      concluidos += 1 
+    if venda['status'] == "CANCELADO":
+      cancelado += 1
+    if venda["status"] == "PENDENTE":
+      pendente += 1
+      
+  pctconcluidos = (concluidos / len(vendas) *100) 
+  pctcancelados = (cancelado / len(vendas) *100)
+  pctpendente = (pendente / len(vendas) *100)
+      
+          
+  print(f"CONCLUIDOS: {concluidos} pedidos ({pctconcluidos:.2f}%)")   
+  print(f"CANCELADOS: {cancelado} pedidos ({pctcancelados:.2f}%)")   
+  print(f"PENDENTE: {pendente} pedidos ({pctcancelados:.2f}%)")   
   
   
   
-  
+   
+ 
   
   
 if __name__ == '__main__':
