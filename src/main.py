@@ -49,8 +49,25 @@ def main():
     return
 
   print(f'[2/2] {len(vendas):,} registros encontrados com sucesso!')
+  
+  print("RELATÓRIO DE VENDAS - E-COMERCE 2026- BRASIL")
+  print(" ")
+  print("1 - Visão geral das finanças:")
+  print(" ")
+  vendas_concluidas = 0
+  faturamento = 0
+  for venda in vendas:
+    faturamento += venda["valor_total"]
+    if venda["status"] == "CONCLUIDO":
+        vendas_concluidas += venda["valor_total"]
+    
 
-  print(vendas[0])
+  print(f'Total de vendas: R$ {faturamento:,.2f}')
+  print(f'Total de vendas concluídas: R$ {vendas_concluidas:,.2f}')
+  
+  
+  
+  
   
   
 if __name__ == '__main__':
