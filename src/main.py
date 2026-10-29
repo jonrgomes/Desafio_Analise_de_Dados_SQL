@@ -88,7 +88,24 @@ def main():
   print(f"CONCLUIDOS: {concluidos} pedidos ({pctconcluidos:.2f}%)")   
   print(f"CANCELADOS: {cancelado} pedidos ({pctcancelados:.2f}%)")   
   print(f"PENDENTE: {pendente} pedidos ({pctcancelados:.2f}%)")   
-  
+  print("\n3 - Métodos de Pagamentos\n")
+  pix = 0
+  boleto = 0
+  ctdcredito = 0
+  for venda in vendas: 
+    if venda["pagamento"]["metodo"] == "PIX":
+      pix += 1
+    if venda["pagamento"]["metodo"] == "BOLETO":
+      boleto +=1 
+    if venda["pagamento"]["metodo"] == "CARTAO_CREDITO":
+      ctdcredito += 1
+       
+  pctpix = (pix / len(vendas) *100)
+  pctboleto = (boleto / len(vendas)* 100)
+  pctctdcredito = (ctdcredito / len(vendas)* 100) 
+  print(f"PIX: {pix} ({pctpix:.2f}%)")
+  print(f"BOLETO: {boleto} ({pctboleto:.2f}%)")
+  print(f"CARTAO_CREDITO: {ctdcredito} ({pctctdcredito:.2f}%)")
   
   
    
