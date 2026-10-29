@@ -105,7 +105,12 @@ def main():
   pctctdcredito = (ctdcredito / len(vendas)* 100) 
   print(f"PIX: {pix} ({pctpix:.2f}%)")
   print(f"BOLETO: {boleto} ({pctboleto:.2f}%)")
-  print(f"CARTAO_CREDITO: {ctdcredito} ({pctctdcredito:.2f}%)")
+  print(f"CARTAO_CREDITO: {ctdcredito} ({pctctdcredito:.2f}%)\n")
+  print("4 - Top categorias mais vendidas (Pedidos Concluídos)\n")
+  
+  
+      
+  
   
   
    
