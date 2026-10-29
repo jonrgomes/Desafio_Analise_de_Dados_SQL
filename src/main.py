@@ -87,7 +87,7 @@ def main():
           
   print(f"CONCLUIDOS: {concluidos} pedidos ({pctconcluidos:.2f}%)")   
   print(f"CANCELADOS: {cancelado} pedidos ({pctcancelados:.2f}%)")   
-  print(f"PENDENTE: {pendente} pedidos ({pctcancelados:.2f}%)")   
+  print(f"PENDENTES: {pendente} pedidos ({pctcancelados:.2f}%)")   
   
   
   
