@@ -110,8 +110,18 @@ def main():
   
   categorias = {}
   for venda in vendas:
-    venda["categoria"]["nome"]
-  print(venda)
+    if venda["status"] == "CONCLUIDO":
+      for iten in venda["itens"]:
+        nome_cat = iten["categoria"]["nome"]
+        valor_item = iten["preco_unitario"] * iten["quantidade"]
+        if nome_cat not in categorias:
+          categorias[nome_cat] = 0
+        categorias[nome_cat] += valor_item 
+        
+
+      
+    
+
   
   
       
