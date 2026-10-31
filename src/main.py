@@ -117,8 +117,16 @@ def main():
         if nome_cat not in categorias:
           categorias[nome_cat] = 0
         categorias[nome_cat] += valor_item 
-        
-
+      
+  for posicoes in range(1, 4):
+    maior_nome = 0
+    maior_valor = 0
+    for nome in categorias:
+      if categorias[nome] > maior_valor:
+        maior_valor = categorias[nome]
+        maior_nome = nome
+    print(f"{posicoes}ª - {maior_nome}: R$ {maior_valor:.2f}")
+    del categorias[maior_nome]
       
     
 
