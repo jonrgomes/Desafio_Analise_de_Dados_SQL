@@ -87,7 +87,7 @@ def main():
         
   print(f"CONCLUIDOS: {concluidos} pedidos ({pctconcluidos:.2f}%)")   
   print(f"CANCELADOS: {cancelado} pedidos ({pctcancelados:.2f}%)")   
-  print(f"PENDENTE: {pendente} pedidos ({pctcancelados:.2f}%)")   
+  print(f"PENDENTE: {pendente} pedidos ({pctpendente:.2f}%)")   
   print("\n3 - Métodos de Pagamentos\n")
   pix = 0
   boleto = 0
@@ -107,6 +107,11 @@ def main():
   print(f"BOLETO: {boleto} ({pctboleto:.2f}%)")
   print(f"CARTAO_CREDITO: {ctdcredito} ({pctctdcredito:.2f}%)\n")
   print("4 - Top categorias mais vendidas (Pedidos Concluídos)\n")
+  
+  categorias = {}
+  for venda in vendas:
+    venda["categoria"]["nome"]
+  print(venda)
   
   
       
